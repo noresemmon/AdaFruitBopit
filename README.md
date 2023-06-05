@@ -17,3 +17,7 @@ The game utilizes three outputs.
 The Neo Pixel LEDs are used to show how much time is left to complete task. As well as a small animation is played while a game over has occured. 
 The speaker is used to tell the player which input to do using the speaker say function. 
 The serial montor is used to display as another way to see what input to do. When gamer over happend the serial montior also outputs both points earned along with highscore since board was reset. 
+
+
+### Contact
+If you have any suggestions for making the code more efficeient or if there are any bugs or problems with the code please feel free to email at gfgg73018@gmail.com this is a throw away email so sorry if I don't respond quickly.
