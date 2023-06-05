@@ -4,7 +4,7 @@
 This game is similiar to the popular handheld game Bop it!, it is meant to be ran on the Circuit Playground Express (CPX). The game will start when the code is ran the goal is to complete the said action within the given time. The time given to complete the task goes down as you progress through the levels. There are seven levels with each one having more tasks then the last, with the last level being endless and the time goes down by one millisecond after every task. Each level is randomized. After every task completed in the time limit one point is given this will be outputed in the serial monitor once a game over happens. You can see the amount of time given by how fast the Neo Pixels LEDs light up. If you don't do the task within the time limit you will get a game over which will be shown in the serial monitor as well as being said through the speaker. If you want to reset the game type "yes" into the serial monitor. 
 
 
-## Game Inputs
+### Game Inputs
 When "press" is said press both buttons (D4 and D5).
 When "switch" is said move the switch either to the right or left (D7).
 When "move" is said shake the CPX board it is using the accelormoter to calculate the total acceleration of the board.
