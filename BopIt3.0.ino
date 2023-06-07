@@ -214,12 +214,10 @@ void level(){
     
   switch(modeControl){
 case 0:
-delay(200);
+delay(100);
   CircuitPlayground.clearPixels();
-	CircuitPlayground.speaker.say(spSWITCH); 
-  delay(100);
-  CircuitPlayground.speaker.say(spIT); 
-    Serial.println("Switch it");      
+	CircuitPlayground.speaker.say(spSWITCH);  
+    Serial.println("Switch");      
   for (int i = 0; i < 10; i++){
     CircuitPlayground.setPixelColor(i,255,0,0);
       delay(d);
@@ -245,12 +243,10 @@ else {
 break; 
 
 case 1:
-delay(200);
+delay(100);
   CircuitPlayground.clearPixels();
 	CircuitPlayground.speaker.say(spPRESS);
-  delay(100);
-  CircuitPlayground.speaker.say(spIT);
-  Serial.println("Press it");
+  Serial.println("Press");
     for (int i = 10; i > 0; i--){
     CircuitPlayground.setPixelColor(i,255,0,0);
       delay(d);
@@ -275,12 +271,10 @@ break;
 default:
 
 case 2:
-  delay(200);
+  delay(100);
   CircuitPlayground.clearPixels();
 	CircuitPlayground.speaker.say(spMOVE);
-  delay(100);
-  CircuitPlayground.speaker.say(spIT);
-  Serial.println("Move it");
+  Serial.println("Move");
     for (int i = 0; i < 10; i++){
     CircuitPlayground.setPixelColor(i,255,0,0);
       delay(d);
@@ -318,12 +312,10 @@ if (totalAccel > 20){
  break;
 
 case 3:
-  delay(200);
+  delay(100);
   CircuitPlayground.clearPixels();
   CircuitPlayground.speaker.say(spSAY);
-  delay(100);
-  CircuitPlayground.speaker.say(spIT);
-  Serial.println("Say it");
+  Serial.println("Say");
 
 
     for (int i = 0; i < 10; i++){
