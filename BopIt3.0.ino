@@ -80,7 +80,7 @@ void loop() {
 
 
   if (gameStart == true){
-  if (gameOver == false && points < 3){
+  if (gameOver == false && points < 4){
     resetFlag = false;
     if (levelFlag == 1){
     Serial.println("level 1");
@@ -92,7 +92,7 @@ void loop() {
   d = 350;
   level(); 
   } 
-  if (gameOver == false && points >= 3 && points < 7){
+  if (gameOver == false && points >= 4 && points < 8){
      if (levelFlag == 2){
     Serial.println("level 2");
     CircuitPlayground.speaker.say(spLEVEL);  
@@ -103,7 +103,7 @@ void loop() {
    d = 300;
   level(); 
 }
-if (gameOver == false && points >= 7 && points < 12){
+if (gameOver == false && points >= 8 && points < 13){
      if (levelFlag == 3){
        Serial.println("level 3");
     CircuitPlayground.speaker.say(spLEVEL);  
@@ -114,7 +114,7 @@ if (gameOver == false && points >= 7 && points < 12){
 d = 250;
 level();
 }
-if (gameOver == false && points >= 12 && points < 18){
+if (gameOver == false && points >= 13 && points < 19){
      if (levelFlag == 4){
        Serial.println("level 4");
     CircuitPlayground.speaker.say(spLEVEL);  
@@ -125,7 +125,7 @@ if (gameOver == false && points >= 12 && points < 18){
 d = 200;
 level();
 }
-if (gameOver == false && points >= 18 && points < 25){
+if (gameOver == false && points >= 19 && points < 26){
      if (levelFlag == 5){
        Serial.println("level 5");
     CircuitPlayground.speaker.say(spLEVEL);  
@@ -136,7 +136,7 @@ if (gameOver == false && points >= 18 && points < 25){
 d = 150;
 level();
 }
-if (gameOver == false && points >= 25 && points < 33){
+if (gameOver == false && points >= 26 && points < 34){
      if (levelFlag == 6){
        Serial.println("level 6");
     CircuitPlayground.speaker.say(spLEVEL);  
@@ -147,7 +147,7 @@ if (gameOver == false && points >= 25 && points < 33){
 d = 100;
 level();
 }
-if (gameOver == false && points >= 33){
+if (gameOver == false && points >= 34){
      if (levelFlag == 7){
     Serial.println("Endless level");
     CircuitPlayground.speaker.say(spEND);  
@@ -324,7 +324,8 @@ case 3:
   }
   for (int i = 0; i < 10; i++){
     CircuitPlayground.setPixelColor(i,0,255,0);}
-    s = CircuitPlayground.mic.soundPressureLevel(100);
+    s = CircuitPlayground.mic.soundPressureLevel(10);
+    Serial.println(s);
     if (s > 70){
     switchFlag = false;
     leftFlag = false;
