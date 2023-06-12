@@ -43,7 +43,6 @@ volatile int points = 0;
 int modeControl = 0;
 float s = 0;
 int levelFlag = 1;
-String command; //no clue why but code runs better with this ¯\_(ツ)_/¯
 
 
 
@@ -324,8 +323,7 @@ case 3:
   }
   for (int i = 0; i < 10; i++){
     CircuitPlayground.setPixelColor(i,0,255,0);}
-    s = CircuitPlayground.mic.soundPressureLevel(10);
-    Serial.println(s);
+     s = CircuitPlayground.mic.soundPressureLevel(90);
     if (s > 70){
     switchFlag = false;
     leftFlag = false;
