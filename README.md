@@ -7,8 +7,8 @@ This game is similiar to the popular handheld game Bop it!, it is meant to be ra
 ### Game Inputs
 When "press" is said press both buttons (D4 and D5).
 When "switch" is said move the switch (D7) either to the right or left.
-When "move" is said shake the CPX board it is using the accelormoter to calculate the total acceleration of the board.
-When "say" is said make noise the CPX board is using the micropone to detect noise.
+When "move" is said shake the CPX board it is using the accelormoter to calculate the total acceleration of the board.(Note: for guarteened detection of the movement input make sure you are moving until the timer is up)
+When "say" is said make noise the CPX board is using the micropone to detect noise.(Note: for guarteened detection of sound input make sure you are making noise until the timer is up)
 In order to reset/start the game you will need to press both buttons(D4 and D5). 
 
 
